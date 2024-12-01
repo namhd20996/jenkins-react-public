@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER = 'docker'
-        DOCKER_CREDENTIALS = credentials('secret-test123')
+        DOCKER_CREDENTIALS = credentials('secret-test')
     }
 
     stages {
