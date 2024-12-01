@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Example Test Suite" tests="2" failures="0" error="0" time="0.123">
+    <testcase classname="src/App.test.js" name="testPass" time="0.001"/>
+    <testcase classname="example.ClassName" name="testFail" time="0.001">
+      <failure message="Expected true but got false">AssertionError: false is not true</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
