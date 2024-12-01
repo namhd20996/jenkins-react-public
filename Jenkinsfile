@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    environment {
+        DOCKER = 'docker'
+        DOCKER_CREDENTIALS = credentials('secret-test')
+    }
+
     stages {
         
          stage('Build') {
@@ -31,6 +36,8 @@ pipeline {
             }
             steps {
                 echo 'npm test'
+                echo '$DOCKER'
+                echo '$DOCKER_CREDENTIALS'
             }
         }
     }
